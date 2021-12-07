@@ -1,6 +1,6 @@
 # Automation-Examples
-By G² Development
-Infrastructure as Code, Automation, Toolbuilding for IT-Environments in several programming languages.
+Development by G² Development <br>
+Infrastructure as Code, Automation and Toolbuilding for IT-Environments in several programming languages.
 
 ## Content
 1. [PowerShell]()
