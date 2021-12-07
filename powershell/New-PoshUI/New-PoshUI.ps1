@@ -1,7 +1,7 @@
 Function New-PoshUI {
 <#
 .Synopsis
-   (C) G² Development
+   By G² Development
    PowerShell is able to generate a basic User Interface for the most Commandlets.
    Website: https://www.g-square.dev/
 .DESCRIPTION
