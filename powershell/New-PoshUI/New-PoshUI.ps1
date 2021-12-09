@@ -3,7 +3,6 @@ Function New-PoshUI {
 .Synopsis
    By G² Development
    PowerShell is able to generate a basic User Interface for the most Commandlets.
-   Website: https://www.g-square.dev/
 .DESCRIPTION
    It doesn't matter if you write your own function or use a provided one from a module.
    The Command "Show-Command" is using a part of the .NET-Framework to automatic build a User Interface based on
@@ -19,8 +18,6 @@ Function New-PoshUI {
    Show-Command Basic-PoshUI
 .EXAMPLE
    Get-Help Basic-PoshUI -ShowWindow
-.EXAMPLE
-   Get-Help Show-Command -ShowWindow
 #>
    [CmdletBinding(
       DefaultParameterSetName = "Use a String", # Choice of default register-card
@@ -44,7 +41,7 @@ Function New-PoshUI {
       ParameterSetName = "Use an Integer" # register-card for "Use a Integer" -> can be any other value,
                                           # make sure to make a Set of Parameters with the same name when using this functionality
    )]
-   [ValidateRange(0,31)] # Values from 1 to 30 are valid
+   [ValidateRange(0,31)] # Defines that values from 1 to 30 would be valid
    [int]$BasicInt,
 
    # If you want to give your users a selection of options 
@@ -88,6 +85,4 @@ Function New-PoshUI {
       }
    }
 }
-
 Show-Command New-PoshUI 
-
